@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajzolás a vászonra</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+
+<body>
+    <header id="fejlec" class="fejlec">
+        Rajzolás a vászonra FU7OMC
+    </header>
+
+    <section id="tartalom">
+        <canvas id="SZMCanvas" width="700" height="350" style="border: 1px solid #000000;">
+            <img id="kep" style="width: 70px; height: 70px;" src="kepek/iit.jpg" alt="Miskolci iit">
+        </canvas>
+    </section>
+    <style>
+        #lablec {
+            width: 580px;
+        }
+    </style>
+
+    <footer id="lablec" class="lablec">
+        <hr>
+        <h3>Források:</h3>
+        <a href="https://www.w3schools.com/html/html5_canvas.asp">https://www.w3schools.com/html/html5_canvas.asp</a>
+
+    </footer>
+
+    <script>
+        window.onload = function () {
+            var szm = document.getElementById("SZMCanvas");
+            var szmx = szm.getContext("2d");
+
+            szmx.lineWidth = 5;
+            szmx.strokeStyle = "#0066ff";
+            szmx.strokeRect(80, 180, 200, 120);
+
+            var gradient = szmx.createRadialGradient(175, 87, 10, 200, 100, 75);
+
+            gradient.addColorStop("0", "#ffcc00");
+            gradient.addColorStop("0.3", "#6600ff");
+            gradient.addColorStop("1.0", "#33ff33");
+
+            szmx.fillStyle = gradient;
+            szmx.fillRect(100, 60, 150, 75);
+
+
+            var c = document.getElementById("SZMCanvas");
+            var szmx = c.getContext("2d");
+            szmx.beginPath();
+            szmx.arc(450, 150, 65, 0.3 * Math.PI, 1.5 * Math.PI);
+            szmx.lineWidth = 7;
+            szmx.strokeStyle = "6633ff";
+
+            szmx.stroke();
+
+            szmx.fillStyle = "#ffcc33";
+            szmx.fill();
+
+            szmx.font = "30px Arial";
+            szmx.fillText("Mérnökinformatika 2024", 160, 30);
+
+            var canvas = document.getElementById("SZMCanvas");
+            var ctx = canvas.getContext("2d");
+            var img = document.getElementById("kep");
+            // Kivágási téglalap paraméterei: x, y, width, height
+            var sourceX = 387; // A kivágás kezdőpontjának X koordinátája az eredeti képen
+            var sourceY = 710; // A kivágás kezdőpontjának Y koordinátája az eredeti képen
+            var sourceWidth = 1280; // A kivágás szélessége
+            var sourceHeight = 960; // A kivágás magassága
+
+            // A kivágott rész kirajzolása a canvas-re
+            ctx.drawImage(img, sourceX, sourceY, sourceWidth, sourceHeight, 550, 200, sourceWidth, sourceHeight);
+        }
+
+    </script>
+</body>
+
+</html>
