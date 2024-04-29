@@ -1,57 +1,38 @@
 <!DOCTYPE html>
-<html lang="hu">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery feladatok</title>
     <script src="jquery-3.7.1.js"></script>
-    <script src="FU7OMC_1.js"></script>
-    <title>Animáció és Doboz</title>
     <style>
-        .container {
-            position: relative;
-            width: auto;
-            height: auto;
-        }
-
-        .box {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 300px;
-            height: 100px;
-            background-color: green;
-            text-align: right;
-            padding: 20px;
-            border: 2px solid #333;
-            display: none;
-        }
-
-        .button-container {
-            margin-bottom: 20px;
-        }
+      
+        #box {
+            background-color: #00ff6a;
+        width: 300px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        position: relative;
+    }
+    
     </style>
 </head>
-
 <body>
-    <h1 id="fejlec">jQuery feladatok</h1>
-    </header>
-    <div class="button-container">
-        <button onclick="start()">Animáció indítása</button>
-        <button onclick="eltuntet()">Bekezdések elrejtése</button>
-        <button onclick="gomb()">Összecsuk / Kinyit</button>
-    </div>
-    <div class="container">
-        <p><b>A jQuery egy JavaScript programozói könyvtár, amelyet John Resig kezdett fejleszteni.</b></p>
-        <p>Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja.</p>
-        <p><b>Effekteket és animációkat adhatunk HTML elemeinkhez. Számtalan plugint íratk hozzá.</b></p>
+    <header><h1>JQuery feladatok - Animáció</h1></header>
+    <button id="start">Animáció indítása</button> 
+    <button onclick="elrejt3()">Bekezdések elrejtése</button> 
+    <button id="gomb">Összecsuk / Kinyit</button>
+    <p><strong>A JQuery egy Javascript programozói könyvtár, amelyet John Resig kezdett fejleszteni</strong></p>
+    <p>Elterjedhetnek tekinthető segítségével könnyen bejárható egy HTML oldal DOM-ja.</p>
+    <p><strong>Effekteket és animációt adhatunk HTML elemeinkhez. Számtalan plugint írtak jozzá.</strong></p>
+
+    <br>
+    <br>
+    <div id="box">
+        <strong>ME GEIK - PTI</strong>
     </div>
 
-    <div class="box">
-        <p>ME GEIK – PTI</p>
-    </div>
-
+    <script src="FU7OMC_1.js"></script>
 </body>
-
 </html>
