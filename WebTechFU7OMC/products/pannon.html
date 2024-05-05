@@ -15,6 +15,9 @@
     <link rel='stylesheet' href="../../css/style.css" type='text/css' />
     <link rel='stylesheet' href="../../css/fontawesome-all.css">
 </head>
+<!--jQuery-->
+<script src="../../jquery/jquery.js"></script>
+
 <body>
     <div class="banner-top container-fluid" id="home">
         <!-- header -->
@@ -170,6 +173,43 @@
                                     </button>
                                 </form>
                             </div>
+                            <table id="sajt_table" border="1">
+                                <tr>
+                                    <td>Termék neve:</td>
+                                    <td><span id="termek_neve"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Márka:</td>
+                                    <td><span id="marka"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Sajttípus:</td>
+                                    <td><span id="sajttipus"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Tömeg:</td>
+                                    <td><span id="tomeg"></span> g</td>
+                                </tr>
+                                <tr>
+                                    <td>Ár:</td>
+                                    <td><span id="aras"></span> Ft</td>
+                                </tr>
+                                <tr>
+                                    <td>Összetevők:</td>
+                                    <td><span id="osszetevok"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Szállítás:</td>
+                                    <td>
+                                        <p class="table2" style="font-size: 16px">Szállító: <span class="table"
+                                                id="szallito"></span></p>
+                                        <p class="table2" style="font-size: 16px">Szállítási idő: <span class="table"
+                                                id="szallitasi_ido"></span></p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <script src="pannon.js"></script>
+                            <link rel='stylesheet' href="../../products/products.css" type='text/css' />
                         </div>
                     </div>
                 </div>
@@ -286,9 +326,6 @@
         </div>
     </footer>
     <!-- //footer -->
-
-    <!--jQuery-->
-    <script src="../../jquery/jquery.js"></script>
     <!-- cart-js -->
     <script src="../../js/minicart.js"></script>
     <script>

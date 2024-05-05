@@ -1,0 +1,22 @@
+{
+"SZM_orarend":{
+"kurzus":[{
+	"kurzusnev": "Fizika",
+	"idopont":{
+	"nap": "Kedd",
+	"tol": "12",
+	"ig": 14
+	},
+	"helyszin": "XXX",
+	"oktato": "Dr. Pszota Gábor",
+	"szak": "GEIK"
+
+}
+
+
+]
+
+
+}
+
+}

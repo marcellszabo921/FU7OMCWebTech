@@ -5,16 +5,19 @@
     <title>Magyar Sajt Áruház</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="../../images/logo.png">
-    <link rel='stylesheet' href="../../css/bootstrap.css" type='text/css' />
-    <link rel='stylesheet' href="../../css/login_overlay.css" type='text/css' />
-    <link rel='stylesheet' href="../../css/style6.css" type='text/css' />
-    <link rel='stylesheet' href="../../css/shop.css" type="text/css" />
+    <link rel="shortcut icon" href="../images/logo.png">
+    <link rel='stylesheet' href="../css/bootstrap.css" type='text/css' />
+    <link rel='stylesheet' href="../css/login_overlay.css" type='text/css' />
+    <link rel='stylesheet' href="../css/style6.css" type='text/css' />
+    <link rel='stylesheet' href="../css/shop.css" type="text/css" />
     <link rel='stylesheet' href="../../css/owl.carousel.css" type="text/css" media="all">
-    <link rel='stylesheet' href="../../css/owl.theme.css" type="text/css" media="all">
-    <link rel='stylesheet' href="../../css/style.css" type='text/css' />
-    <link rel='stylesheet' href="../../css/fontawesome-all.css">
+    <link rel='stylesheet' href="../css/owl.theme.css" type="text/css" media="all">
+    <link rel='stylesheet' href="../css/style.css" type='text/css' />
+    <link rel='stylesheet' href="../css/fontawesome-all.css">
+    <!--jQuery-->
+    <script src="../jquery/jquery.js"></script>
 </head>
+
 <body>
     <div class="banner-top container-fluid" id="home">
         <!-- header -->
@@ -31,7 +34,7 @@
                 </div>
                 <div class="col-md-6 logo text-center">
                     <h1 class="logoa">
-                        <a class="navbar-brand" href="../../index.html"> Magyar Sajt Áruház </a>
+                        <a class="navbar-brand" href="../index.html"> Magyar Sajt Áruház </a>
                     </h1>
                 </div>
 
@@ -147,7 +150,7 @@
 
                                 <ul class="slides">
                                     <li data-thumb="../../images/s1.png">
-                                        <div class="thumb-image"> <img src="../../images/s1.png" data-imagezoom="true"
+                                        <div class="thumb-image"> <img src="../images/s1.png" data-imagezoom="true"
                                                 class="img-fluid" alt=" "> </div>
                                 </ul>
                                 <div class="clearfix"></div>
@@ -156,8 +159,7 @@
                     </div>
                     <div class="col-lg-8 single-right-left simpleCart_shelfItem">
                         <h3>MIZO Trapista Sajt</h3>
-                        <p><span class="item_price">3000 Ft</span>
-                        </p>
+                        <p><span class="item_price">3000 Ft</span></p>
                         <div class="occasion-cart">
                             <div class="googles single-item singlepage">
                                 <form action="#" method="post">
@@ -170,11 +172,47 @@
                                     </button>
                                 </form>
                             </div>
+                            <table id="sajt_table" border="1">
+                                <tr>
+                                    <td>Termék neve:</td>
+                                    <td><span id="termek_neve"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Márka:</td>
+                                    <td><span id="marka"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Sajttípus:</td>
+                                    <td><span id="sajttipus"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Tömeg:</td>
+                                    <td><span id="tomeg"></span> g</td>
+                                </tr>
+                                <tr>
+                                    <td>Ár:</td>
+                                    <td><span id="aras"></span> Ft</td>
+                                </tr>
+                                <tr>
+                                    <td>Összetevők:</td>
+                                    <td><span id="osszetevok"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Szállítás:</td>
+                                    <td>
+                                        <p class="table2" style="font-size: 16px">Szállító: <span class="table" id="szallito"></span></p>
+                                        <p class="table2" style="font-size: 16px">Szállítási idő: <span class="table"  id="szallitasi_ido"></span></p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <script src="mizo.js"></script>
+                            <link rel='stylesheet' href="../../products/products.css" type='text/css' />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
     </section>
     <!--footer -->
@@ -288,7 +326,7 @@
     <!-- //footer -->
 
     <!--jQuery-->
-    <script src="../../jquery/jquery.js"></script>
+    <script src="../jquery/jquery.js"></script>
     <!-- cart-js -->
     <script src="../../js/minicart.js"></script>
     <script>
