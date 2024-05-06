@@ -128,3 +128,8 @@ function increaseVolume() {
 
 const videoPlayer = document.getElementById('myVideo');
 video.loop = true;
+
+
+function showAlert() {
+    alert("Elküldted a kérdőívet! Köszönjük!");
+}
