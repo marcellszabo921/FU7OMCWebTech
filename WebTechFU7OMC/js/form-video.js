@@ -125,3 +125,6 @@ function increaseVolume() {
         video.volume += 0.5;
     }
 }
+
+const videoPlayer = document.getElementById('myVideo');
+video.loop = true;

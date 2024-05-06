@@ -351,12 +351,11 @@
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
 
-                            <video id="videoPlayer" controls autoplay>
+                            <video id="videoPlayer" controls loop autoplay>
                                 <source src="videos/mizoreklam.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                             <br>
-                            <script src="js/form-video.js"></script>
                             <div class="videoButtons">
                                 <button class="videoButtons2" onclick="togglePlayPause()">Indítás / Leállítás</button>
                                 <button class="videoButtons2" onclick="decreaseVolume()">Halk</button>
@@ -411,10 +410,10 @@
                                         minden termék részletes leírással rendelkezik, így könnyen dönthettem. Az
                                         rendelésem gyorsan és biztonságosan érkezett meg, és a sajtok frissek és
                                         ízletesek voltak! Nagyon elégedett vagyok a szolgáltatással és biztosan
-                                        visszatérek újabb vásárlásokra!</p>
+                                        visszatérek újabb vásárlásokra!</p><br>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev test" href="#carouselExampleControls" role="button"
+                          <a class="carousel-control-prev test" href="#carouselExampleControls" role="button"
                                 data-slide="prev">
                                 <span class="fas fa-long-arrow-alt-left"></span>
                                 <span class="sr-only">Előző</span>
@@ -483,6 +482,8 @@
             </div>
 
             <div id="displayData"></div>
+            
+            <script src="js/form.js"></script>
     </section>
     <!--footer -->
     <footer class="py-lg-5 py-3">
@@ -593,7 +594,7 @@
         </div>
     </footer>
     <!-- //footer -->
-    
+    <script src="js/form-video.js"></script>
     <!-- cart-js -->
     <script src="js/minicart.js"></script>
     <script>
@@ -624,7 +625,7 @@
         });
     </script>
     <!-- carousel -->
-    <script src="js/owl.carousel.js"></script>
+    <script src="../js/owl.carousel.js"></script>
     <script>
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
@@ -678,7 +679,7 @@
     </script>
     <!--// end-smoth-scrolling -->
 
-    <script src="js/bootstrap.js"></script>
+    <script src="../js/bootstrap.js"></script>
     <!-- js file -->
 </body>
 
